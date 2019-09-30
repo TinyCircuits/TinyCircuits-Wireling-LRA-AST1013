@@ -35,7 +35,7 @@ void setup() {
   drv.selectLibrary(1);
 
   //The port is the number on the Adapter board where the sensor is attached
-  selectPort(3);
+  selectPort(0);
 
   // I2C trigger by sending 'go' command
   // default, internal trigger when sending GO command
