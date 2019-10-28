@@ -1,7 +1,7 @@
-# TinyCircuits Whisker LRA
+# TinyCircuits Wireling LRA
 # AST1013 Rev1
 
-The design files are located under design_files/ for the TinyCircuits AST1013 Rev 1 PCB. This is a whisker board which features the TI DRV2605 Haptic Linear Resonant Actuator driver (also known as a fancy vibration motor), including built in TouchSense2200 software comprising over 100 pre-created effects.
+The design files are located under design_files/ for the TinyCircuits AST1013 Rev 1 PCB. This is a Wireling board which features the TI DRV2605 Haptic Linear Resonant Actuator driver (also known as a fancy vibration motor), including built in TouchSense2200 software comprising over 100 pre-created effects.
 
 Format is in Cadsoft Eagle format - Eagle version 6.2 was used for the original design.
 
