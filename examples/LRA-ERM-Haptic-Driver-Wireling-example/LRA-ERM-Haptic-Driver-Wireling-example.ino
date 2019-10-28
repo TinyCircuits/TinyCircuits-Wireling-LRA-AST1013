@@ -1,12 +1,12 @@
 /*************************************************************************
- * DRV2605 LRA ERM Haptic Driver Whisker
+ * DRV2605 LRA ERM Haptic Driver Wireling
  * This program is an expanded example that is part of the Adafruit_DRV2605 
  * library. The DRV_2605 will send 116 different waveform effects to a 
  * vibrating or buzzing motor. If you are interested in the individual 
  * effects, the list of effects can be found on page 57 of the datasheet: 
  * http://www.ti.com/lit/ds/symlink/drv2605.pdf
  * 
- * Modified by: Laverena Wienclaw for TinyCircuits 
+ * Modified by: Laveréna Wienclaw for TinyCircuits 
  *************************************************************************/
  
 #include <Wire.h>             // For using I2C communication
@@ -20,9 +20,17 @@ uint8_t effect = 1;     // The global variable used to keep track of Waveform ef
 TinyScreen display = TinyScreen(TinyScreenPlus);
 int background = TS_8b_Black;
 
+// Make Serial Monitor compatible for all TinyCircuits processors
+#if defined(ARDUINO_ARCH_AVR)
+  #define SerialMonitorInterface Serial
+#elif defined(ARDUINO_ARCH_SAMD)
+  #define SerialMonitorInterface SerialUSB
+#endif
+
+
 void setup() {
-  SerialUSB.begin(9600);
-  SerialUSB.println("DRV Effects Test");
+  SerialMonitorInterface.begin(9600);
+  SerialMonitorInterface.println("DRV Effects Test");
   drv.begin();
 
   // Setup and style for TinyScreen+
@@ -44,7 +52,7 @@ void setup() {
 
 // Print the DRV effect number and then play the effect
 void loop() {
-  SerialUSB.print("Effect #"); SerialUSB.println(effect);
+  SerialMonitorInterface.print("Effect #"); SerialMonitorInterface.println(effect);
   displayScreenAxis(effect);
 
   // Set the effect to play
@@ -74,7 +82,7 @@ void displayScreenAxis(int effect) {
   display.print(effect); 
 }
 
-// **This function is necessary for all Whisker boards attached through an Adapter board**
+// **This function is necessary for all Wireling boards attached through an Adapter board**
 // Selects the correct address of the port being used in the Adapter board
 void selectPort(int port) {
   Wire.beginTransmission(0x70);

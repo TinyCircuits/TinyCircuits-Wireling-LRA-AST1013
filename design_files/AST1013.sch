@@ -63,6 +63,13 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="58" name="bCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="Invisible" color="7" fill="1" visible="no" active="no"/>
+<layer number="61" name="stand" color="7" fill="1" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -71,6 +78,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="5" fill="1" visible="no" active="no"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="101" name="Patch_Top" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
@@ -84,7 +92,14 @@
 <layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="HENWAY_PKG" color="12" fill="1" visible="yes" active="yes"/>
+<layer number="114" name="50_Electronics_Plate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="henwayRES" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="117" name="mPads" color="7" fill="1" visible="no" active="no"/>
+<layer number="118" name="mVias" color="7" fill="1" visible="no" active="no"/>
+<layer number="119" name="mUnrouted" color="7" fill="1" visible="no" active="no"/>
+<layer number="120" name="mDimension" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
@@ -93,11 +108,44 @@
 <layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="129" name="mtStop" color="7" fill="1" visible="no" active="no"/>
+<layer number="130" name="mbStop" color="7" fill="1" visible="no" active="no"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="133" name="mtFinish" color="7" fill="1" visible="no" active="no"/>
+<layer number="134" name="mbFinish" color="7" fill="1" visible="no" active="no"/>
+<layer number="135" name="mtGlue" color="7" fill="1" visible="no" active="no"/>
+<layer number="136" name="mbGlue" color="7" fill="1" visible="no" active="no"/>
+<layer number="137" name="mtTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="138" name="mbTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="139" name="mtKeepout" color="7" fill="1" visible="no" active="no"/>
+<layer number="140" name="mbKeepout" color="7" fill="1" visible="no" active="no"/>
+<layer number="141" name="mtRestrict" color="7" fill="1" visible="no" active="no"/>
+<layer number="142" name="mbRestrict" color="7" fill="1" visible="no" active="no"/>
+<layer number="143" name="mvRestrict" color="7" fill="1" visible="no" active="no"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="145" name="mHoles" color="7" fill="1" visible="no" active="no"/>
+<layer number="146" name="mMilling" color="7" fill="1" visible="no" active="no"/>
+<layer number="147" name="mMeasures" color="7" fill="1" visible="no" active="no"/>
+<layer number="148" name="mDocument" color="7" fill="1" visible="no" active="no"/>
+<layer number="149" name="mReference" color="7" fill="1" visible="no" active="no"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
+<layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
+<layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
+<layer number="156" name="bCapacitor" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="157" name="tResistor" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="158" name="bResistor" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="159" name="henwayCAP" color="13" fill="1" visible="yes" active="yes"/>
+<layer number="160" name="IDFDebug" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="191" name="mNets" color="7" fill="1" visible="no" active="no"/>
+<layer number="192" name="mBusses" color="7" fill="1" visible="no" active="no"/>
+<layer number="193" name="mPins" color="7" fill="1" visible="no" active="no"/>
+<layer number="194" name="mSymbols" color="7" fill="1" visible="no" active="no"/>
+<layer number="195" name="mNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="196" name="mValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
@@ -124,11 +172,15 @@
 <layer number="222" name="222bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="223" name="223bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="224" name="224bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="231" name="Eagle3D_PG1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="251" name="SMDround" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="255" name="PART_" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -182,16 +234,6 @@
 <smd name="4" x="1" y="2.475" dx="1.4" dy="0.6" layer="1" rot="R90"/>
 <smd name="5" x="2" y="2.475" dx="1.4" dy="0.6" layer="1" rot="R90"/>
 <smd name="1" x="-2" y="2.475" dx="1.4" dy="0.6" layer="1" rot="R90"/>
-</package>
-<package name="0402_SHORT">
-<wire x1="-0.998" y1="0.3504" x2="0.9907" y2="0.3504" width="0.127" layer="51"/>
-<wire x1="0.9907" y1="0.3504" x2="0.9907" y2="-0.3432" width="0.127" layer="51"/>
-<wire x1="0.9907" y1="-0.3432" x2="-0.998" y2="-0.3432" width="0.127" layer="51"/>
-<wire x1="-0.998" y1="-0.3432" x2="-0.998" y2="0.3504" width="0.127" layer="51"/>
-<smd name="1" x="-0.6" y="0" dx="0.65" dy="0.55" layer="1"/>
-<smd name="2" x="0.6" y="0" dx="0.65" dy="0.55" layer="1"/>
-<text x="0" y="0" size="0.3048" layer="25" align="center">&gt;NAME</text>
-<wire x1="-0.635" y1="0" x2="0.5588" y2="0" width="0.2032" layer="1"/>
 </package>
 <package name="DGS(S-PDSO-G10)">
 <circle x="-0.9" y="-0.9" radius="0.325" width="0" layer="21"/>
@@ -10348,7 +10390,7 @@
 <rectangle x1="23.447375" y1="34.585275" x2="23.631525" y2="34.591625" layer="94"/>
 <rectangle x1="23.447375" y1="34.591625" x2="23.631525" y2="34.597975" layer="94"/>
 </symbol>
-<symbol name="RESISTOR-1">
+<symbol name="RESISTOR">
 <description>Resistor</description>
 <wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.2032" layer="94"/>
 <wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.2032" layer="94"/>
@@ -10468,8 +10510,8 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="AS-ITM-00002" prefix="C" uservalue="yes">
-<description>CAP CER 10UF 10V 20% X5R 0603</description>
+<deviceset name="AS-ITM-00410" prefix="C" uservalue="yes">
+<description>CAP CER 1UF 10V X5R 0603</description>
 <gates>
 <gate name="G$1" symbol="C-US" x="0" y="0"/>
 </gates>
@@ -10481,8 +10523,8 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PARTNO" value="AS-ITM-00002" constant="no"/>
-<attribute name="VALUE" value="10uF" constant="no"/>
+<attribute name="PARTNO" value="AS-ITM-00410" constant="no"/>
+<attribute name="VALUE" value="1uF" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -10512,10 +10554,10 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="AS-ITM-00076" prefix="R" uservalue="yes">
-<description>RES 0.0 OHM 1/16W 1% 0402 SMD</description>
+<deviceset name="AS-ITM-00003" prefix="R">
+<description>RES 1.00K OHM 1/16W 1% 0402</description>
 <gates>
-<gate name="G$1" symbol="RESISTOR-1" x="0" y="0"/>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="0402">
@@ -10525,31 +10567,8 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PARTNO" value="AS-ITM-00076" constant="no"/>
-<attribute name="VALUE" value="0.0" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="0402_SHORT" package="0402_SHORT">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="VALUE" value="SHORT" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="C0402" package="C0402">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PARTNO" value="AS-ITM-00076" constant="no"/>
-<attribute name="VALUE" value="0.0" constant="no"/>
+<attribute name="PARTNO" value="AS-ITM-00003" constant="no"/>
+<attribute name="VALUE" value="1.00K" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -10656,10 +10675,16 @@ http://www.ti.com/lit/ds/symlink/drv2605l.pdf</description>
 <part name="C1" library="tinycircuits" deviceset="AS-ITM-00008" device="" value="0.1uF"/>
 <part name="GND1" library="tinycircuits" deviceset="GND" device=""/>
 <part name="P+1" library="tinycircuits" deviceset="VCC" device=""/>
-<part name="C2" library="tinycircuits" deviceset="AS-ITM-00002" device="" value="10uF"/>
+<part name="C2" library="tinycircuits" deviceset="AS-ITM-00410" device="" value="1uF">
+<attribute name="PARTNO" value="AS-ITM-00410"/>
+<attribute name="VALUE" value="1uF"/>
+</part>
 <part name="P+2" library="tinycircuits" deviceset="VCC" device=""/>
 <part name="J1" library="tinycircuits" deviceset="AS-ITM-00340" device="" value="SM05B"/>
-<part name="R2" library="tinycircuits" deviceset="AS-ITM-00076" device="" value="0.0"/>
+<part name="R2" library="tinycircuits" deviceset="AS-ITM-00003" device="" value="1.00K">
+<attribute name="PARTNO" value="AS-ITM-00003"/>
+<attribute name="VALUE" value="1.00K"/>
+</part>
 <part name="GND2" library="tinycircuits" deviceset="GND" device=""/>
 <part name="U1" library="tinycircuits" deviceset="AS-ITM-00368" device="" value="DRV2605"/>
 <part name="C3" library="tinycircuits" deviceset="AS-ITM-00105" device="" value="1uF"/>
@@ -10670,17 +10695,22 @@ http://www.ti.com/lit/ds/symlink/drv2605l.pdf</description>
 <sheets>
 <sheet>
 <plain>
-<text x="340.868" y="17.272" size="3.556" layer="94" font="vector">LRA Board</text>
+<text x="340.868" y="17.272" size="3.556" layer="94" font="vector">Wireling LRA</text>
 <text x="327.152" y="6.35" size="3.556" layer="94" font="vector">AS-SCH-AST1013</text>
 <text x="416.56" y="6.858" size="3.556" layer="94" font="vector">1</text>
-<text x="165.1" y="185.42" size="5.08" layer="94" font="vector">DRV2605 LRA Board</text>
+<text x="165.1" y="185.42" size="5.08" layer="94" font="vector">DRV2605 LRA Driver</text>
 <text x="45.72" y="35.56" size="3.048" layer="91">Released under the Creative Commons Attribution Share-Alike 3.0 License</text>
 <text x="45.72" y="30.48" size="3.048" layer="91">http://creativecommons.org/licenses/by-sa/3.0</text>
 <text x="45.72" y="20.32" size="3.048" layer="91">Original Arduino Uno Design by Team Arduino</text>
 <text x="45.72" y="10.16" size="3.048" layer="91">TinyDuino, TinyLily and TinyShield Designs by TinyCircuits</text>
 <text x="45.72" y="15.24" size="3.048" layer="91">LilyPad Arduino Design by Leah Buechley and Sparkfun Electronics</text>
-<text x="170.18" y="109.22" size="1.778" layer="97">NOTES:</text>
-<text x="170.18" y="106.68" size="1.778" layer="97">I2C Address = 0x5A</text>
+<text x="55.88" y="55.88" size="1.778" layer="96">Non Populated: -</text>
+<text x="55.88" y="53.34" size="1.778" layer="96">Hand Populated: -</text>
+<text x="55.88" y="50.8" size="1.778" layer="96">Hand Soldered: -</text>
+<text x="55.88" y="58.42" size="1.778" layer="96">Variant: Standard - R</text>
+<text x="55.88" y="48.26" size="1.778" layer="96">Notes: -</text>
+<text x="177.8" y="53.34" size="1.778" layer="97">NOTES:</text>
+<text x="177.8" y="50.8" size="1.778" layer="97">I2C Address = 0x5A</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$2" x="322.58" y="0"/>
