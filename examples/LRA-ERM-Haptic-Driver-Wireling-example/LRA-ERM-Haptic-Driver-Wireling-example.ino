@@ -27,8 +27,14 @@ int background = TS_8b_Black;
   #define SerialMonitorInterface SerialUSB
 #endif
 
+const int powerPin = 4;  // Power to Wireling
+
 
 void setup() {
+  // Power Wireling
+  pinMode(powerPin, OUTPUT);
+  digitalWrite(powerPin, HIGH);
+
   SerialMonitorInterface.begin(9600);
   SerialMonitorInterface.println("DRV Effects Test");
   drv.begin();
@@ -44,14 +50,17 @@ void setup() {
 
   //The port is the number on the Adapter board where the sensor is attached
   selectPort(0);
+  
 
   // I2C trigger by sending 'go' command
   // default, internal trigger when sending GO command
   drv.setMode(DRV2605_MODE_INTTRIG);
+  drv.useLRA();
 }
 
 // Print the DRV effect number and then play the effect
 void loop() {
+  setup();
   SerialMonitorInterface.print("Effect #"); SerialMonitorInterface.println(effect);
   displayScreenAxis(effect);
 
@@ -66,7 +75,7 @@ void loop() {
   delay(1000);
 
   effect++;
-  if (effect > 117) effect = 1;
+  if (effect > 1) effect = 117;
 }
 
 // Prints out number of effect to TinyScreen+
