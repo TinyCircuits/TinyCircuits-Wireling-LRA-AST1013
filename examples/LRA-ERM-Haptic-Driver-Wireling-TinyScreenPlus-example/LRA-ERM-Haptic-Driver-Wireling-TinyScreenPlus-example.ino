@@ -28,9 +28,6 @@ int background = TS_8b_Black;
   #define SerialMonitorInterface SerialUSB
 #endif
 
-const int powerPin = 4;  // Power to Wireling
-
-
 void setup() {
   // Initialize and power wireling
   Wireling.begin();
